@@ -1,7 +1,7 @@
 pipeline {
 
   environment {
-    registry = "192.168.1.30:5000/home/vagrant/jenkins"
+    registry = "192.168.1.30:5000/mohit/myweb"
     dockerImage = ""
   }
 
