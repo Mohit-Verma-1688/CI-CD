@@ -1,7 +1,7 @@
 pipeline {
 
   environment {
-    registry = "192.168.1.30:5000/mohit/myweb"
+    registry = "192.168.5.30:5000/mohit/myweb"
     dockerImage = ""
   }
 
