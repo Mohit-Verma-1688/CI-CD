@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Checkout Source') {
       steps {
-        git(url: 'https://github.com/Mohit-Verma-1688/CI-CD.git', branch: 'master')
+        git(url: 'https://github.com/Mohit-Verma-1688/CI-CD.git', branch: 'master', credentialsId: 'Mohit-verma-1688')
       }
     }
 
