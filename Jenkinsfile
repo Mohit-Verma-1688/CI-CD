@@ -5,7 +5,7 @@ pipeline {
     dockerImage = ""
   }
 
- node ('jenkins-slave') {
+ node('jenkins-slave') {
   stages {
 
     stage('Checkout Source') {
