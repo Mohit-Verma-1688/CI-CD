@@ -14,7 +14,7 @@ pipeline {
         git 'https://github.com/Mohit-Verma-1688/CI-CD.git'
       }
     }
-   }
+   
 
     stage('Build image') {
       steps{
