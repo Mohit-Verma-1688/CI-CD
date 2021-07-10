@@ -1,7 +1,7 @@
 pipeline {
 
   environment {
-    registry = "192.168.5.30:5000/mohit/myweb"
+    registry = "192.168.5.70:5000/mohit/myweb"
     dockerImage = ""
   }
 
@@ -14,6 +14,7 @@ pipeline {
         git 'https://github.com/Mohit-Verma-1688/CI-CD.git'
       }
     }
+   }
 
     stage('Build image') {
       steps{
