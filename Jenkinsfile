@@ -1,4 +1,3 @@
-```
 node('jenkins-slave') {
     
      stage('unit-tests') {
@@ -7,4 +6,3 @@ node('jenkins-slave') {
         """)
     }
 }
-```
