@@ -4,8 +4,8 @@ pipeline {
     registry = "192.168.5.70:5000/mohit/myweb"
     dockerImage = ""
   }
-
- node('jenkins-slave') {
+ 
+  agent any
   stages {
 
     stage('Checkout Source') {
@@ -40,7 +40,7 @@ pipeline {
         }
       }
     }
-  }
+  
   }
 
 }
