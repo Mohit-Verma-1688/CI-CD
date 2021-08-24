@@ -19,6 +19,10 @@ pipeline {
             sh '''
             /kaniko/executor --dockerfile `pwd`/Dockerfile \
                              --context `pwd` \
+                             --insecure \
+                             --skip-tls-verify \
+                             --skip-tls-verify-pull \
+                             --insecure-pull \
                              --destination=192.168.5.70:5000/myweb:${BUILD_NUMBER}
             '''
           }
