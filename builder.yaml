@@ -10,7 +10,7 @@ spec:
     - /bin/cat
     tty: true    
   - name: kaniko
-    image: gcr.io/kaniko-project/executor:debug
+    image: gcr.io/kaniko-project/executor:debug-v0.22.0
     command:
     - /busybox/cat
     tty: true
@@ -20,7 +20,7 @@ spec:
   volumes:
     - name: kaniko-secret
       secret:
-        secretName: testing
+        secretName: regcred
         items:
           - key: .dockerconfigjson
             path: config.json
